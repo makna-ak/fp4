@@ -1,0 +1,56 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #CCEBF7 !important;
+}
+
+/* Style for the box */
+.content-box {
+    background-color: #9FDDF7;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 600px;
+    height: 510px;
+    flex-shrink: 0;
+    border-radius: 30px;
+}
+  
+/* Style for the paragraph text */
+.content-box p {
+    font-size: 16px;
+}
+
+/* Optional: Custom styles */
+.container-fluid {
+    margin-top: 20px;
+}
+
+/* Centering the form elements */
+.form-group {
+    text-align: left;
+}
+
+/* Styles for the title */
+.h1 {
+    color: #000;
+    text-align: center;
+    font-size: 2em; /* Sesuaikan ukuran font */
+    font-weight: bold; /* Bisa menggunakan bold untuk mempertegas judul */
+    margin-top: 20px; /* Memberi jarak atas */
+}
+
+#weather-content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#invalid {
+    color: red;
+    text-align: center;
+}
+
+.cityName {
+    padding-bottom: 15px;
+}
