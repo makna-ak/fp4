@@ -38,7 +38,8 @@ body{
     text-align: center;
     font-size: 2em; /* Sesuaikan ukuran font */
     font-weight: bold; /* Bisa menggunakan bold untuk mempertegas judul */
-    margin-top: 20px; /* Memberi jarak atas */
+    margin-top: 0px; /* Memberi jarak atas */
+    padding-top: 10px;
 }
 
 #weather-content {
@@ -53,4 +54,8 @@ body{
 
 .cityName {
     padding-bottom: 15px;
+}
+
+.btn {
+    margin-left: 10px; 
 }
