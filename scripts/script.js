@@ -16,26 +16,29 @@ async function weatherForecast(event){
         // Get cityname from object and check if its defined
         let cityName = resultObj.name;
         if (cityName == undefined) {
+            document.getElementById("weather-content").style.display = "none";
             document.getElementById("invalid").innerHTML = 'City ' + city + ' not found.';
             throw new Error(`City ${city} not found`);
         } else {
             // Remove the error city not found
             document.getElementById("invalid").innerHTML = ''
+
+            document.getElementById("weather-content").style.display = "block";
             
             // Display city name
-            document.getElementById("cityName").innerHTML = cityName;
+            document.getElementById("cityName").innerHTML = `City: ${cityName}`;
 
             // Display weather condition
             let condition = resultObj.weather[0].description;
-            document.getElementById("condition").innerHTML = condition;
+            document.getElementById("condition").innerHTML = `Conditions: ${condition}`;
 
             // Display temperature
             let temp = resultObj.main.temp;
-            document.getElementById("temp").innerHTML = `${temp} °C`;
+            document.getElementById("temp").innerHTML = `Temperatures: ${temp} °C`;
 
             // Display wind speed
             let wind = resultObj.wind.speed;
-            document.getElementById("wind").innerHTML = `${wind} meter/sec`;
+            document.getElementById("wind").innerHTML = `Wind Speed: ${wind} meter/sec`;
         }
 
     } catch (error) {
